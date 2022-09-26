@@ -1,0 +1,117 @@
+:root {
+    --background: #1c0c3f;
+    --purple-g: #d094ea;
+    --white: #ffffff;
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.avatar {
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.coding {
+    width: 30px;
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    position: relative;
+}
+
+h1,
+h2 {
+    color: var(--white);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.my-extra-links {
+    padding: 24px 16px;
+}
+
+.my-extra-links li {
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-align: center;
+    transition: background-color .6s;
+}
+
+.my-extra-links li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.my-extra-links li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color .6s;
+}
+
+.my-extra-links li:hover {
+    background-color: var(--white);
+}
+
+.my-extra-links li:hover a {
+    color: var(--background)
+}
+
+.social-network {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-network svg{
+    height: 30px;
+    width: 30px;
+}
+
+.social-network svg path {
+    fill: var(--white);
+    transition: fill .6s;
+}
+
+.social-network svg:hover path {
+    fill: var(--purple-g);
+} 
+
+canvas {
+    position: absolute;
+    z-index: -100;
+  }
